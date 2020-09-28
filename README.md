@@ -1,11 +1,51 @@
 # Green Stocks Analysis
+
 ## Project Overview
-    Data was analyzed in Excel using VBA code in order to develop and implement an automated macro that will evaluate the total daily volume, and percentage return of 12 different stocks over the years 2017 and 2018. This macro can be used for any year of comprehensive data collected for these twelve stock tickers.
+    Data was analyzed in Excel using VBA code in order to develop and implement an automated macro that will evaluate the total daily volume, and percentage return of 12 different stocks over the years 2017 and 2018. This macro can be used for any year of comprehensive data collected for these twelve stock tickers. The purpose for this macro is to allow Steve to quickly pull critical information as he researches stock options. Refactoring of a former macro was conducted in order to further optimize the speed, efficiency, and flexibility of the macro. The body of this analysis will address some of the advantages and disadvantages of the refactoring process.
     
-    ![Imgur](https://imgur.com/tsGxXHi.png)
+## Results of Refactoring and Analysis
+
+    While refactoring the stock analysis, some advantages and disadvantages became apparent in the refactoring process. Some were more general conclusions, while others pertained specifically to Steve's macro in VBA or overlapped and affirmed the general pro's/con's.
     
-    ![Imgur](https://imgur.com/sdQj6dl.png)
+### General Advantages
+
+    - Refactoring code can organize your code and make it easier to read if exectued optimally.
+      
+    - Refacotring can make your program run more quickly/efficiently.
     
-    ![Imgur](https://imgur.com/lFsDLLq.png)
+    - Refactoring can keep your code up to date should updates to the software make your original code obsolete.
     
-    ![Imgur](https://imgur.com/TXNtbvm.png)
+    - Refactoring code offers practice and development to whoever is programming said code
+    
+### General Disadvantages
+
+    - The larger your script of code gets, the riskier it might be to make large-scale changes to the syntax, as it could be hard to track where discrepencies lie.
+    
+    - A former programmer could come back into the code and no longer understand the layout of the code.
+    
+### Green Stocks Specific Advantages
+
+    - After refactoring the code, the program now runs much faster. With the original code script, the time was over 20x slower than the refactored code. This is shown by the attached images below. Setting the "tickerIndex = 0" and indexing the tickers instead of running a 'for' loop with an extra variable to run through the tickers eliminated the processing of another loop and, I believe helped with speed significantly.
+    
+    - Eliminating the ticker 'for' loop also simplified the readability of the code script, since there was only "i" to follow instead of "i" and "j".  
+    
+                    '4) Loop through tickers            '5) loop through rows in the data
+                          For i = 0 To 11                       For j = 2 To RowCount
+                          
+                                                 vs.
+                                                 
+                                    
+                For tickerIndex = 0 To 11                 For i = 2 To RowCount
+                    tickerVolumes(tickerIndex) = 0             If Cells(i, 1).Value = tickers(tickerIndex) Then
+                       
+                        
+
+    [Imgur](https://imgur.com/tsGxXHi.png)
+    
+    [Imgur](https://imgur.com/sdQj6dl.png)
+    
+    [Imgur](https://imgur.com/lFsDLLq.png)
+    
+    [Imgur](https://imgur.com/TXNtbvm.png)
+    
+## Summary of Analysis
