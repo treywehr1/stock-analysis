@@ -21,11 +21,11 @@ While refactoring the stock analysis, some advantages and disadvantages became a
 
    - The larger your script of code gets, the riskier it might be to make large-scale changes to the syntax, as it could be hard to track where discrepencies lie.
     
-   - A former programmer could come back into the code and no longer understand the layout of the code.
+   - A former programmer could come back into the code and no longer understand the layout of the code he/she had previously worked on.
     
 ### Green Stocks Specific Advantages
 
-   - After refactoring the code, the program now runs much faster. With the original code script, the time was over 20x slower than the refactored code. This is shown by the attached images below. Setting the "tickerIndex = 0" and indexing the tickers instead of running a 'for' loop with an extra variable to run through the tickers eliminated the processing of another loop and, I believe helped with speed significantly.
+   - After refactoring the code, the program now runs much faster. With the original code script, the time was significantly slower than the refactored code. This is shown by the attached images below. Setting the "tickerIndex = 0" and indexing the tickers instead of running a 'for' loop with an extra variable to run through the tickers eliminated the processing of another loop and, I believe helped with speed significantly.
     
    - Eliminating the ticker 'for' loop also simplified the readability of the code script, since there was only "i" to follow instead of "i" and "j".  
     
@@ -42,10 +42,16 @@ While refactoring the stock analysis, some advantages and disadvantages became a
 
    - Refactoring Steve's code took a lot of time on the front end, although it will hopefully help to save time in the long run.
    
+   - Refactoring steves code makes this macro less static and easier to apply to further data. This should be a good thing, but perhaps Steve would want to keep      his macro static as stock evaluations can be a sensitive and private business matter.   
 
 ![Imgur](https://imgur.com/tsGxXHi.png)
+
+![Imgur](https://imgur.com/LZ54VjY.png)
     
 ![Imgur](https://imgur.com/sdQj6dl.png)
     
-    
+![Imgur](https://imgur.com/0NiVAUk.png)   
+   
 ## Summary of Analysis
+
+In summary, the list of advantages for refactoring seem to heavily out-weigh the disadvantages of refactoring. It was genuinely hard to conceive of disadvantages specific to Steve's VBA code, however there certainly are disadvantages to refactoring in a more general sense. Steve's spreadsheet now processes it's code much more efficiently and is well automated to suit his needs. Most importantly, with cleaner and more concise code, with comments throughout, refactoring has made the actual syntax of this code easier to follow for clearer understanding and more timely ammendments down the line. 
