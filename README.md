@@ -44,10 +44,14 @@ While refactoring the stock analysis, some advantages and disadvantages became a
    
    - Refactoring steves code makes this macro less static and easier to apply to further data. This should be a good thing, but perhaps Steve would want to keep      his macro static as stock evaluations can be a sensitive and private business matter.   
 
+## 2017 Code: Original vs Refactored
+
 ![Imgur](https://imgur.com/tsGxXHi.png)
 
 ![Imgur](https://imgur.com/LZ54VjY.png)
-    
+
+## 2018 Code: Original vs Refactored    
+
 ![Imgur](https://imgur.com/sdQj6dl.png)
     
 ![Imgur](https://imgur.com/0NiVAUk.png)   
